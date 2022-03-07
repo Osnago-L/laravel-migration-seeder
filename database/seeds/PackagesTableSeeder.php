@@ -24,6 +24,7 @@ class PackagesTableSeeder extends Seeder
             $newPackage -> departure = $faker -> dateTime();
             $newPackage -> price = $faker -> numberBetween(50, 300);
             $newPackage -> discount = $faker -> numberBetween(0, 50);
+            $newPackage -> save();
         }
     }
 }

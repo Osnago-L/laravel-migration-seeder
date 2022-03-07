@@ -20,8 +20,8 @@ class CreatePackagesTable extends Migration
             $table->string('hotel_name',50);
             $table->string('air_company',50);
             $table->string('flight_code',10);
-            $table->dateTimeTz('arrival', 0);
-            $table->dateTimeTz('departure', 0);
+            $table->date('arrival', 0);
+            $table->date('departure', 0);
             $table->integer('price');
             $table->integer('discount');
         });
